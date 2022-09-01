@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>the bulb on and off</title>
+        <!-- importing the js from the online website-->
+        <script src="https://www.w3schools.com/js/myScript.js"></script>
+        <!-- importing the js from the external file-->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- javascript the frim the local file -->
+        <script>
+            
+            function functionon()
+            {
+               console.log("this ids bulb on fun");
+               document.getElementById("bulbresult").innerHTML="bulb is on";
+            }
+            function functionoff()
+            {
+                console.log("this is bulb off fun");
+                document.getElementById("bulbresult").innerHTML="bulb is off";
+            }
+        </script>   
+        <h1>BULB ON AND OFF</h1>
+        <button  id="buttonbulbon" onclick="document.getElementById('myImage').src='pic_bulbon.gif';functionon();">Turn on the bulb</button>
+        <img id="myImage" src="pic_bulboff.gif" alt="bilb off img">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif';functionoff();">Turn of the bulb</button>
+        
+        <h1>Result:</h1>
+        <h2 id="bulbresult">result of the bulb</h2>
+    </body>
+</html>
