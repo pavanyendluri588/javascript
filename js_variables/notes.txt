@@ -1,0 +1,15 @@
+// in js there are three types of variables
+//var,let,const
+
+vai is used to declare the variable 
+var variable is functional scope means the variable is declared by using the var keyword
+the variable is declard outside the function can be accessed gobally  
+the variable sis declared inside the finction can be accessed within the function
+
+
+
+
+let keyword
+he scope of a let variable is only block scoped.
+ It can’t be accessible outside the particular block ({block})
+it can be accessed without declaring with out declaring with let keyword
