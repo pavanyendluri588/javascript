@@ -28,3 +28,4 @@ console.log("after updation of c:",c)
 const d =500
 //variable with const cannot be redeclared  and cannot be upated
 //variable with const cannot  be declared without initilization
+//jittu
