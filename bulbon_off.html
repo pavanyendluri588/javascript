@@ -5,11 +5,27 @@
         <script src="https://www.w3schools.com/js/myScript.js"></script>
         <!-- importing the js from the external file-->
         <script src="script.js"></script>
+
     </head>
-    <body>
+    <body id="bodypro" script="background-color:blue;">
         <!-- javascript the frim the local file -->
         <script>
-            
+            function bady_bulb_fun()
+            {
+                document.getElementById("bodypro").style.backgroundColor="white";
+            }
+            function body_color_red()
+            {
+                document.getElementById("bodypro").style.backgroundColor="red";
+            }
+            function body_color_green()
+            {
+                document.getElementById("bodypro").style.backgroundColor="green";
+            }
+            function body_color_yellow()
+            {
+                document.getElementById("bodypro").style.backgroundColor="yellow";
+            }
             function functionon()
             {
                console.log("this ids bulb on fun");
@@ -21,12 +37,16 @@
                 document.getElementById("bulbresult").innerHTML="bulb is off";
             }
         </script>   
+        <button onclick="body_color_red();" style="border: 5;border-color: black ;background-color:red;border-radius: 100px;width: 30;height: 30;margin-left: 80%;margin-top: 1%;"></button>
+        <button onclick="body_color_green();" style="border: 5;border-color: black ;background-color:green;border-radius: 100px;width: 30;height: 30;"></button>
+        <button onclick="body_color_yellow();" style="border: 5;border-color: black ;background-color:yellow;border-radius: 100px;width: 30;height: 30;"></button>
         <h1>BULB ON AND OFF</h1>
-        <button  id="buttonbulbon" onclick="document.getElementById('myImage').src='pic_bulbon.gif';functionon();">Turn on the bulb</button>
-        <img id="myImage" src="pic_bulboff.gif" alt="bilb off img">
         <button onclick="document.getElementById('myImage').src='pic_bulboff.gif';functionoff();">Turn of the bulb</button>
+        <img id="myImage" src="R.jfif" alt="bilb off img"  style="width:50;height: 50;" >
         
+        <button  id="buttonbulbon" onclick="document.getElementById('myImage').src='pic_bulbon.gif';functionon();bady_bulb_fun();">Turn on the bulb</button>
         <h1>Result:</h1>
         <h2 id="bulbresult">result of the bulb</h2>
+        
     </body>
 </html>
